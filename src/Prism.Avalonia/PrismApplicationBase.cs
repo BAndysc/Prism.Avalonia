@@ -28,7 +28,7 @@ namespace Prism
         IContainerExtension _containerExtension;
         IModuleCatalog _moduleCatalog;
 
-        public IAvaloniaObject MainWindow { get; private set; }
+        public AvaloniaObject MainWindow { get; private set; }
 
         /// <summary>
         /// The dependency injection container used to resolve objects
@@ -54,7 +54,7 @@ namespace Prism
             base.Initialize();
 
             ConfigureViewModelLocator();
-            
+
             _containerExtension = CreateContainerExtension();
             _moduleCatalog = CreateModuleCatalog();
             RegisterRequiredTypes(_containerExtension);
@@ -139,8 +139,8 @@ namespace Prism
         protected abstract void RegisterTypes(IContainerRegistry containerRegistry);
 
         /// <summary>
-        /// Configures the <see cref="IRegionBehaviorFactory"/>. 
-        /// This will be the list of default behaviors that will be added to a region. 
+        /// Configures the <see cref="IRegionBehaviorFactory"/>.
+        /// This will be the list of default behaviors that will be added to a region.
         /// </summary>
         protected virtual void ConfigureDefaultRegionBehaviors(IRegionBehaviorFactory regionBehaviors)
         {
@@ -174,7 +174,7 @@ namespace Prism
         }
 
         /// <summary>
-        /// Registers the <see cref="Type"/>s of the Exceptions that are not considered 
+        /// Registers the <see cref="Type"/>s of the Exceptions that are not considered
         /// root exceptions by the <see cref="ExceptionExtensions"/>.
         /// </summary>
         protected virtual void RegisterFrameworkExceptionTypes()
@@ -186,12 +186,12 @@ namespace Prism
         /// Creates the shell or main window of the application.
         /// </summary>
         /// <returns>The shell of the application.</returns>
-        protected abstract IAvaloniaObject CreateShell();
+        protected abstract AvaloniaObject CreateShell();
 
         /// <summary>
         /// Initializes the shell.
         /// </summary>
-        protected virtual void InitializeShell(IAvaloniaObject shell)
+        protected virtual void InitializeShell(AvaloniaObject shell)
         {
             MainWindow = shell;
         }

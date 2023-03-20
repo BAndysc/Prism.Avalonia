@@ -41,7 +41,7 @@ namespace Prism
         /// Gets the shell user interface
         /// </summary>
         /// <value>The shell user interface.</value>
-        protected IAvaloniaObject Shell { get; set; }
+        protected AvaloniaObject Shell { get; set; }
 
         /// <summary>
         /// Creates the container extension used by Prism.
@@ -97,7 +97,7 @@ namespace Prism
         }
 
         /// <summary>
-        /// Registers the <see cref="Type"/>s of the Exceptions that are not considered 
+        /// Registers the <see cref="Type"/>s of the Exceptions that are not considered
         /// root exceptions by the <see cref="ExceptionExtensions"/>.
         /// </summary>
         protected virtual void RegisterFrameworkExceptionTypes()
@@ -135,8 +135,8 @@ namespace Prism
         }
 
         /// <summary>
-        /// Configures the <see cref="IRegionBehaviorFactory"/>. 
-        /// This will be the list of default behaviors that will be added to a region. 
+        /// Configures the <see cref="IRegionBehaviorFactory"/>.
+        /// This will be the list of default behaviors that will be added to a region.
         /// </summary>
         protected virtual IRegionBehaviorFactory ConfigureDefaultRegionBehaviors()
         {
@@ -180,7 +180,7 @@ namespace Prism
         /// in order to be able to add regions by using the <see cref="RegionManager.RegionNameProperty"/>
         /// attached property from XAML.
         /// </remarks>
-        protected virtual IAvaloniaObject CreateShell()
+        protected virtual AvaloniaObject CreateShell()
         {
             return null;
         }
@@ -195,7 +195,7 @@ namespace Prism
         /// <summary>
         /// Run the bootstrapper process.
         /// </summary>
-        /// <param name="runWithDefaultConfiguration">If <see langword="true"/>, registers default 
+        /// <param name="runWithDefaultConfiguration">If <see langword="true"/>, registers default
         /// Prism Library services in the container. This is the default behavior.</param>
         public abstract void Run(bool runWithDefaultConfiguration);
 

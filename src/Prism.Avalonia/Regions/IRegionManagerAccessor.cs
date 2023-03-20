@@ -22,15 +22,15 @@ namespace Prism.Regions
         /// Gets the value for the RegionName attached property.
         /// </summary>
         /// <param name="element">The object to adapt. This is typically a container (i.e a control).</param>
-        /// <returns>The name of the region that should be created when 
+        /// <returns>The name of the region that should be created when
         /// the RegionManager is also set in this element.</returns>
-        string GetRegionName(IAvaloniaObject element);
+        string GetRegionName(AvaloniaObject element);
 
         /// <summary>
         /// Gets the value of the RegionName attached property.
         /// </summary>
         /// <param name="element">The target element.</param>
         /// <returns>The <see cref="IRegionManager"/> attached to the <paramref name="element"/> element.</returns>
-        IRegionManager GetRegionManager(IAvaloniaObject element);
+        IRegionManager GetRegionManager(AvaloniaObject element);
     }
 }

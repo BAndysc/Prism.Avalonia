@@ -52,9 +52,9 @@ namespace Prism.Regions.Behaviors
         /// The element that will host the Region.
         /// </summary>
         /// <value>The target element.</value>
-        public IAvaloniaObject TargetElement
+        public AvaloniaObject TargetElement
         {
-            get { return this.elementWeakReference != null ? this.elementWeakReference.Target as IAvaloniaObject : null; }
+            get { return this.elementWeakReference != null ? this.elementWeakReference.Target as AvaloniaObject : null; }
             set { this.elementWeakReference = new WeakReference(value); }
         }
 
@@ -93,7 +93,7 @@ namespace Prism.Regions.Behaviors
 
         private void TryCreateRegion()
         {
-            IAvaloniaObject targetElement = this.TargetElement;
+            AvaloniaObject targetElement = this.TargetElement;
             if (targetElement == null)
             {
                 this.Detach();
@@ -119,7 +119,7 @@ namespace Prism.Regions.Behaviors
         /// <param name="targetElement">The target element that will host the <see cref="IRegion"/>.</param>
         /// <param name="regionName">Name of the region.</param>
         /// <returns>The created <see cref="IRegion"/></returns>
-        protected virtual IRegion CreateRegion(IAvaloniaObject targetElement, string regionName)
+        protected virtual IRegion CreateRegion(AvaloniaObject targetElement, string regionName)
         {
             if (targetElement == null)
                 throw new ArgumentNullException(nameof(targetElement));
@@ -211,7 +211,7 @@ namespace Prism.Regions.Behaviors
                 }
             }
         }
-  
+
         /// <summary>
         /// Remove the instance of this class from <see cref="_instanceTracker"/>
         /// so it can eventually be garbage collected
@@ -221,7 +221,7 @@ namespace Prism.Regions.Behaviors
             lock(_trackerLock)
             {
                 _instanceTracker.Remove(this);
-            } 
+            }
         }
     }
 }
