@@ -50,7 +50,7 @@ namespace Prism.Regions
                     region.Add(childItem);
                 }
 
-            regionTarget.Items = region.Views;
+            regionTarget.ItemsSource = region.Views;
         }
 
         /// <summary>
