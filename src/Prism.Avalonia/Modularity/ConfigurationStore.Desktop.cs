@@ -15,6 +15,7 @@ namespace Prism.Modularity
         /// <returns>A <see cref="ModulesConfigurationSection"/> instance.</returns>
         public ModulesConfigurationSection RetrieveModuleConfigurationSection()
         {
+            return new ModulesConfigurationSection();
             return ConfigurationManager.GetSection("modules") as ModulesConfigurationSection;
         }
     }
