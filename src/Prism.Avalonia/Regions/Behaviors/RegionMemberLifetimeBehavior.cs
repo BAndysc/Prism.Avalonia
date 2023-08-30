@@ -21,7 +21,7 @@ namespace Prism.Regions.Behaviors
     /// or the <see cref="RegionMemberLifetimeAttribute"/> (in that order) to determine if it should be kept 
     /// alive on removal.
     /// <p/>
-    /// If the item in the collection is a <see cref="System.Windows.Control"/>, it will
+    /// If the item in the collection is a <see cref="Control"/>, it will
     /// also check it's DataContext for <see cref="IRegionMemberLifetime"/> or the <see cref="RegionMemberLifetimeAttribute"/>.
     /// <p/>
     /// The order of checks are:

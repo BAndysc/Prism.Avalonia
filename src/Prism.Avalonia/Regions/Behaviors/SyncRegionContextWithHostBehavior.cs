@@ -5,6 +5,7 @@ using System.Windows;
 using Prism.Properties;
 using Prism.Common;
 using Avalonia;
+using Avalonia.Controls;
 
 namespace Prism.Regions.Behaviors
 {
