@@ -87,7 +87,6 @@ namespace Prism
 
         public override void OnFrameworkInitializationCompleted()
         {
-            Console.WriteLine("aaa 13");
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktopLifetime)
                 desktopLifetime.MainWindow = MainWindow as Window;
             else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewLifetime)
@@ -95,7 +94,6 @@ namespace Prism
             else if (ApplicationLifetime != null)
                 throw new NotImplementedException($"Liftime type {ApplicationLifetime.GetType()} is not supported");
 
-            Console.WriteLine("aaa 14");
             base.OnFrameworkInitializationCompleted();
         }
 

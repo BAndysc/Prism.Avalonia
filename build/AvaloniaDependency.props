@@ -3,10 +3,10 @@
          xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="11.1.999-cibuild0045719-beta" />
-    <PackageReference Update="Avalonia.Diagnostics" Version="11.1.999-cibuild0045719-beta" />
-    <PackageReference Include="Avalonia.LinuxFramebuffer" Version="11.1.999-cibuild0045719-beta" />
-    <PackageReference Include="Avalonia.Markup.Xaml.Loader" Version="11.1.999-cibuild0045719-beta" />
+    <PackageReference Include="Avalonia" Version="11.1.999-cibuild0045870-beta" />
+    <PackageReference Update="Avalonia.Diagnostics" Version="11.1.999-cibuild0045870-beta" />
+    <PackageReference Include="Avalonia.LinuxFramebuffer" Version="11.1.999-cibuild0045870-beta" />
+    <PackageReference Include="Avalonia.Markup.Xaml.Loader" Version="11.1.999-cibuild0045870-beta" />
   </ItemGroup>
 
 </Project>
