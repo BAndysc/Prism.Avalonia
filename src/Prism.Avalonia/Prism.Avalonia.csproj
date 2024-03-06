@@ -3,11 +3,13 @@
   <Import Project="../../build/Library.props" />
   <Import Project="../../build/AvaloniaDependency.props" />
   <Import Project="../../build/PrismDependency.props" />
-  
+
   <PropertyGroup>
     <RootNamespace>Prism</RootNamespace>
+    <NoWarn>$(NoWarn),CS3001,CS1574,CS0108,CS3003,CS3009,CS3002,CS1573,NU5104,CS3008,CS0162</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
   </PropertyGroup>
-  
+
   <ItemGroup>
     <PackageReference Include="CommonServiceLocator" Version="2.0.5" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />

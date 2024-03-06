@@ -6,6 +6,7 @@
 
   <PropertyGroup>
     <RootNamespace>Prism.Unity</RootNamespace>
+    <NoWarn>$(NoWarn),NU5104</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
