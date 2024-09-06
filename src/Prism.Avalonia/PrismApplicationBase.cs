@@ -28,7 +28,7 @@ namespace Prism
         IContainerExtension _containerExtension;
         IModuleCatalog _moduleCatalog;
 
-        public AvaloniaObject MainWindow { get; private set; }
+        public AvaloniaObject MainWindow { get;  set; }
 
         /// <summary>
         /// The dependency injection container used to resolve objects
